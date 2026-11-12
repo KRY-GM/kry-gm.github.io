@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for the KRY-GM Backup personal Google Drive integration.">
+  <title>Privacy Policy | KRY-GM Backup</title>
+  <style>
+    :root{color-scheme:light;--ink:#152238;--muted:#536178;--accent:#2463a6;--border:#dfe6ee;--bg:#f7f9fc}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink)}
+    .wrap{max-width:820px;margin:auto;padding:0 24px}header{background:white;border-bottom:1px solid var(--border)}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0}nav strong{font-size:1.05rem;letter-spacing:.02em}
+    a{color:var(--accent);text-underline-offset:3px}nav a{text-decoration:none;font-weight:600}
+    main{padding:52px 0 50px}article{background:white;border:1px solid var(--border);border-radius:18px;padding:38px 42px;box-shadow:0 6px 28px rgba(15,30,55,.035)}
+    .eyebrow{font-weight:700;color:var(--accent);letter-spacing:.12em;text-transform:uppercase;font-size:.76rem}
+    h1{font-size:clamp(2rem,5vw,2.75rem);line-height:1.2;letter-spacing:-.03em;margin:12px 0 12px}h2{font-size:1.27rem;margin:32px 0 8px}
+    p{margin:0 0 15px}.lead{color:var(--muted)}ul{padding-left:21px}li{margin:6px 0}footer{padding:0 0 35px;text-align:center;color:var(--muted);font-size:.88rem}
+    @media(max-width:600px){main{padding:30px 0}article{padding:26px 22px}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav aria-label="Main navigation"><strong>KRY-GM Backup</strong><a href="index.html">Home</a></nav></div></header>
+<main class="wrap"><article>
+  <div class="eyebrow">Data handling</div>
+  <h1>Privacy Policy</h1>
+  <p class="lead">KRY-GM Backup · Last updated: 12 November 2026</p>
+  <p>KRY-GM Backup is a personal, non-commercial application operated for the owner's encrypted database backups. It uses Google Drive as a storage destination. This policy describes its intended use when the integration is enabled.</p>
+  <h2>1. Google information accessed</h2>
+  <p>The application requests the <code>https://www.googleapis.com/auth/drive.file</code> OAuth scope. This permits access to Drive files created or explicitly opened through the application. It does not request general access to all existing Drive content. Google OAuth access and refresh tokens are needed to authorize requests and may be stored in the private server's restricted rclone configuration.</p>
+  <h2>2. Purpose and use</h2>
+  <p>The application uses Google authorization only to upload, list, verify, retrieve, and remove the owner's app-managed encrypted backup files as necessary for backup management and recovery. It does not read unrelated Drive files, offer third-party access to them, or use Google user data for advertising, profiling, or unrelated analytics.</p>
+  <h2>3. Storage and security</h2>
+  <p>Database backup data is intended to be encrypted locally with Restic before transmission to Google Drive. Encryption credentials are managed separately from the stored backup repository. OAuth tokens and configuration are intended to remain on the owner's private server with restricted permissions. No password, OAuth token, or database content is published on this website.</p>
+  <h2>4. Sharing and third parties</h2>
+  <p>KRY-GM Backup does not sell or share Google user data with advertisers or other external users. Google Drive stores the uploaded files under the owner's Google account, subject to Google's own terms and privacy practices. GitHub Pages hosts this informational website but is not used to host database backups.</p>
+  <h2>5. Retention and deletion</h2>
+  <p>Encrypted backup files remain in the owner's Drive until they are removed by the owner or by a backup-retention process configured by the owner. OAuth tokens can be removed from the private server and access can be revoked in Google Account security settings. Revoking access does not automatically delete backup files already stored on Drive; they can be deleted separately by the account owner.</p>
+  <h2>6. Website data</h2>
+  <p>These static pages do not contain advertising, analytics scripts, forms, cookies set by the application, or account sign-in. The hosting provider may process ordinary technical access logs under its own policies.</p>
+  <h2>7. Limited use</h2>
+  <p>Use of information received through Google APIs is restricted to providing and improving the owner's backup functionality described here, consistent with the Google API Services User Data Policy, including its Limited Use requirements.</p>
+  <h2>8. Contact and updates</h2>
+  <p>This is a single-user application. Privacy inquiries can be directed to the operator through the developer support address listed on the Google OAuth consent screen. This policy will be revised if the integration's actual data practices change.</p>
+  <p><a href="index.html">Return to the KRY-GM Backup homepage</a></p>
+</article></main>
+<footer class="wrap">KRY-GM Backup · <a href="index.html">Home</a></footer>
+</body></html>
